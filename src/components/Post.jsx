@@ -17,8 +17,8 @@ function Post() {
             </div>
             <div className='post__footer'>
                 <div className='post__footerAction'>
-                    <ArrowUpwardOutlined />
-                    <ArrowDownwardOutlined />
+                    <div className='post__footerAction_up'><ArrowUpwardOutlined /></div>
+                   <div className='post__footerAction_down'> <ArrowDownwardOutlined /></div>
                 </div>
                 <RepeatOnOutlined />
                 <ChatBubbleOutline />

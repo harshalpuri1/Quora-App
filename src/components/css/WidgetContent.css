@@ -1,0 +1,30 @@
+.Widget_Content{
+    /* margin: 5px; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.Widget_Content > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.widget_contents{
+    display: flex;
+    /* flex-direction: column; */
+    cursor: pointer;
+}
+
+.Widget_Content_title{
+    margin-left: 10px;
+}
+
+.Widget_Content_title > p{
+    color: gray;
+    font-size: small;
+}

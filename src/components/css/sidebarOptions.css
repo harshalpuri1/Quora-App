@@ -16,16 +16,12 @@
 }
 
 .sidebarOption > img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 10%;
 }
 
-.sidebarOptionIcon{
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-}
+
 .sidebarOption > p {
     margin-left: 10px;
     color: gray;
@@ -40,7 +36,13 @@
     font-size: 13px;
   }
 .sidebarOption > .MuiSvgIcon-root {
-    font-size: medium;
-    font-size: xx-large;
-    margin-left: 5px;
+    color: gray;
+    width: 35px;
+    /* font-size: medium; */
+    /* font-size: xx-large; */
+    /* margin-left: 5px; */
+  }
+
+  .MuiSvgIcon-root:hover{
+    color: black;
   }

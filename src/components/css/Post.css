@@ -30,8 +30,16 @@
   
   .post__body {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* margin-left: 5px; */
+    /* flex-direction: column; */
   }
+
+  /* .post__btnAnswer{
+    padding: 5px 10px;
+    border-radius: 5px;
+  } */
   
   .post__body > .post__question {
     margin-top: 10px;
@@ -43,7 +51,7 @@
     flex: 1;
   }
   
-  .post__question > .post__btnAnswer {
+  .post__btnAnswer {
     margin-left: auto;
     cursor: pointer;
     padding: 7px;
@@ -59,6 +67,7 @@
   .post__btnAnswer:hover {
     color: #222;
     background: lightgray;
+    border-radius: 5px;
   }
   
   .post__question > p:hover {
@@ -99,20 +108,28 @@
     background-color: lightgray;
     padding: 5px;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    justify-content: space-evenly;
     border-radius: 33px;
   }
-  .post__footerAction > .MuiSvgIcon-root {
+  .post__footerAction > div >.MuiSvgIcon-root {
+    display: inline-flex;
+    justify-content: space-evenly;
     color: gray;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     cursor: pointer;
+    width: 60px;
   }
   
-  .post__footerAction > .MuiSvgIcon-root:hover {
+  .post__footerAction > .post__footerAction_up >.MuiSvgIcon-root:hover {
     color: rgb(0, 140, 255);
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
+  .post__footerAction > .post__footerAction_down>.MuiSvgIcon-root:hover {
+    color: red;
+    /* margin-right: 40px; */
+  }
+  
   
   .post__footerLeft {
     margin-left: auto;
@@ -211,6 +228,40 @@
     height: 120px;
   }
 
-  p{
-    
+  .post > p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
   }
+  .post-answer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 5px;
+    /* border-top: 1px solid lightgrey; */
+  }
+
+  .post-answered{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    /* border-top: 1px solid lightgrey; */
+  }
+
+  .post-info{
+    margin-left: 10px;
+  }
+
+  .post__footerLeft{
+    /* padding-left: 10px; */
+    display: flex;
+    align-items: center;
+  }
+/* 
+  .post__footer > .MuiSvgIcon-root {
+
+  } */

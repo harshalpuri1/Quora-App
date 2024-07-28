@@ -18,9 +18,9 @@
     /* padding: 5px; */
   }
   
-  .qHeader__logo > img {
-    height: 50px !important;
-    /* object-fit: contain; */
+  .qHeader__logo > img{
+    height: 40px !important;
+    object-fit: cover;
   }
   
   .qHeader__icons {
