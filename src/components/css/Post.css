@@ -100,10 +100,17 @@
   
   .post__footer > .MuiSvgIcon-root {
     color: gray;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 30px;
     cursor: pointer;
   }
+  .post__footer > .MuiSvgIcon-root:hover{
+    color: #000;
+  }
   
+  .post__footerLeft > .MuiSvgIcon-root:hover{
+    color: #000;
+  }
   .post__footerAction {
     background-color: lightgray;
     padding: 5px;
@@ -187,7 +194,7 @@
     width: 100%;
   }
   
-  .modal__button > .cancle {
+  .modal__button > .cancel {
     border: none;
     margin-top: 10px;
     outline: none;
@@ -198,7 +205,7 @@
     cursor: pointer;
   }
   
-  .modal__button > .cancle:hover {
+  .modal__button > .cancel:hover {
     color: red;
   }
   .modal__button > .add {

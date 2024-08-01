@@ -1,22 +1,49 @@
 .quora{
     width: 100%;
     min-width: fit-content;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+
 }
 
 
 .quora__contents{
-    display: flex;
-    justify-content: center;
+
+    /* align-items: center; */
+
     padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.05);
     min-width: fit-content;
-    width: 100vw;
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* max-width: 1200px; */
 }
 
 .quora__content{
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: center;
     padding: 0px, 10px;
+    max-width: 1100px;
+    margin-left: auto;
+    box-sizing: initial;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
 }
 
+.react-responsive-modal-modal{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 10px;
+}
+
+.quill {
+    height: 50vh;
+}
+
+.react-responsive-modal-modal-overlay{
+    background: rgb(0 0 0 / 75%);
+}

@@ -1,6 +1,8 @@
 .sidebarOptions{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    max-width: 200px;
 }
 
 .sidebarOption{
@@ -43,6 +45,6 @@
     /* margin-left: 5px; */
   }
 
-  .MuiSvgIcon-root:hover{
+  .sidebarOption:hover .MuiSvgIcon-root{
     color: black;
   }

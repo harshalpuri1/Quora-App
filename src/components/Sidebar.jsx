@@ -4,7 +4,9 @@ import SidebarOptions from './SidebarOptions'
 
 function Sidebar() {
   return (
-    <div className='sidebar'><SidebarOptions/></div>
+    <div className='sidebar'>
+      <SidebarOptions/>
+    </div>
   )
 }
 

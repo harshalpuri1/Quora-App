@@ -1,4 +1,9 @@
 .sidebar{
-    margin: 10px;
-    flex: 0.2;
+    /* top: 50px;  */
+    /* left:0; */
+    height: calc(100% - 60px); /* Adjust based on header height */
+    width: 200px;
+    z-index: 999;
+    box-sizing: border-box;
+    /* padding: 20px; */
 }
