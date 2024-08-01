@@ -3,7 +3,6 @@
     flex-direction: column;
     padding: 10px;
     background-color: white;
-    margin-top: 10px;
     border: 1px solid lightgray;
     border-radius: 5px;
     max-width: 700px;
@@ -62,6 +61,7 @@
     font-weight: 300;
     font-size: 14px;
     border-radius: 5px;
+    height: 30px;
   }
   
   .post__btnAnswer:hover {
@@ -272,3 +272,9 @@
   .post__footer > .MuiSvgIcon-root {
 
   } */
+
+.post_Img > img{
+    width: 500px;
+    object-fit: cover;
+    margin: 5px;
+  }

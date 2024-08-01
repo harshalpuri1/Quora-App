@@ -1,3 +1,7 @@
+.widget{
+    margin: 0;
+
+}
 .Widget_Content{
     /* margin: 5px; */
     display: flex;
@@ -6,6 +10,7 @@
     padding: 5px;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
+    max-width: 170px;
 }
 
 .Widget_Content > img{
@@ -17,7 +22,7 @@
 
 .widget_contents{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     cursor: pointer;
 }
 

@@ -8,7 +8,7 @@ import 'react-responsive-modal/styles.css'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
 import { useNavigate } from 'react-router-dom';
-// import './css/modal.css'
+import './css/modal.css'
 // import Notification from './Notification';
 
 function QuoraHeader() {
@@ -17,8 +17,6 @@ function QuoraHeader() {
   const closeIcon  = (<CloseIcon />);
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('question');
-
-
 
   return (
     <div className='qHeader'>
@@ -45,8 +43,12 @@ function QuoraHeader() {
         <div className='qHeader__input'><Search />
           <input type='text' placeholder='Search Quora' />
         </div>
-        <div className='qHeader__Rem'>
-          <Avatar />
+        <div className='qHeader__Rem'
+        style={{
+          marginLeft: "25px"
+        }}
+        >
+          <img src='https://e0.pxfuel.com/wallpapers/108/13/desktop-wallpaper-one-piece-logo-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9-one-piece-jolly-roger-thumbnail.jpg  '/>
         </div>
         <Button className='button_Add' onClick={() => setIsModalOpen(true)} variant="contained">Add Question
           <ExpandMore />

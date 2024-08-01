@@ -10,22 +10,26 @@ import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css';
 
 
-function Post() {
+function Post({UserName,Timestamp,testquestion,imageUrl, altText}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const Close = (<CloseIcon />);
 
 
     return (
-        <div className='post'>
+        <div className='post' 
+        style={{
+            marginTop: "10px"
+        }}
+        >
             <div className='post__info'>
                 <Avatar />
-                <h4>User Name</h4>
-                <small>Timestamp</small>
+                <h4>{UserName}</h4>
+                <small>{Timestamp}</small>
             </div>
 
             <div className='post__body'>
                 <div className="post__Question">
-                    <p>This is test question</p>
+                    <p>{testquestion}</p>
                 </div>
                 <button
                     onClick={() => setIsModalOpen(true)}
@@ -44,9 +48,9 @@ function Post() {
                     }}
                 >
                     <div className='modal__question'>
-                        <h1>This is test question</h1>
+                        <h1>{testquestion}</h1>
                         <p>Asked by {" "}
-                        <span className='name'>Username</span> on <span className='name'>Timestamp</span>
+                        <span className='name'>{UserName}</span> on <span className='name'>{Timestamp}</span>
                             </p> 
                     </div>
 
@@ -64,6 +68,9 @@ function Post() {
                     </div>
                 </Modal>
             </div>
+            <div className= 'post_Img'>
+                <img src={imageUrl} alt={altText} />
+            </div>
             <div className='post__footer'>
                 <div className='post__footerAction'>
                     <div className='post__footerAction_up'><ArrowUpwardOutlined /></div>
@@ -76,6 +83,7 @@ function Post() {
                     <MoreHorizOutlined />
                 </div>
             </div>
+{/* 
             <p >1 Answer</p>
             <div style={{
                 marginTop: "5px",
@@ -93,7 +101,7 @@ function Post() {
                     </div>
                     <div className='post-answer'>This is test ans</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

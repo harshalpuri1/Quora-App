@@ -19,7 +19,9 @@ function QuoraBox() {
       <div className="quoraBox__info" 
       // onClick={() => setIsModalOpen(true)} 
       >
-        <Avatar />
+        <div className='qHeader__Rem'>
+          <img src='https://e0.pxfuel.com/wallpapers/108/13/desktop-wallpaper-one-piece-logo-%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9-one-piece-jolly-roger-thumbnail.jpg  '/>
+        </div>
         <div className='qurabox_input'>
           <h5>What do you want to ask or share ?</h5>
         </div>

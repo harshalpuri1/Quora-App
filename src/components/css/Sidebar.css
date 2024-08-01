@@ -2,7 +2,7 @@
     /* top: 50px;  */
     /* left:0; */
     height: calc(100% - 60px); /* Adjust based on header height */
-    width: 200px;
+    width: 150px;
     z-index: 999;
     box-sizing: border-box;
     /* padding: 20px; */

@@ -1,21 +1,14 @@
 // import React from 'react'
 import './css/WidgetContent.css'
 
-function WidgetContent() {
+function WidgetContent({widget_profile, altText,title,description}) {
   return (
     <div className="Widget_Contents">
         <div className="Widget_Content">
-            <img src="https://img.freepik.com/premium-vector/ai-generated-icon-artificial-intelligence-generated-vector_849264-816.jpg" alt="widget_profile" />
+            <img src={widget_profile} alt="altText" />
             <div className="Widget_Content_title">
-            <h5>Mobile App Programmer</h5>
-            <p>The best mobile app development company</p>
-            </div>
-        </div>
-        <div className="Widget_Content">
-            <img src="https://img.freepik.com/premium-vector/ai-generated-icon-artificial-intelligence-generated-vector_849264-816.jpg" alt="widget_profile" />
-            <div className="Widget_Content_title">
-            <h5>Mobile App Programmer</h5>
-            <p>The best mobile app development company</p>
+            <h5>{title}</h5>
+            <p>{description}</p>
             </div>
         </div>
     </div>
